@@ -1,6 +1,6 @@
 using System;
 
-class Program {
+class Aula1 {
   
   public static double segundograu(double x, double a, double b, double c) {
 
