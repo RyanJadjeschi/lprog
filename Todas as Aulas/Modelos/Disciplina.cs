@@ -10,18 +10,17 @@ namespace Modelos {
     }
     
     public Disciplina (int semestre) {
-      if (semestre > 0){
-        if(semestre <= 10){
-          this.semestre = semestre;
-        }
-      } else {
-        this.semestre = 1;
-      }
+     if (semestre < 1){
+       this.semestre = 1;
+       }else if (semestre > 10) {
+        this.semestre = 10; 
+       } else{
+              this.semestre = semestre;
+       }
+         
+     
     }
-
-
-
-
-    
   }
+    
+  
 }
