@@ -7,6 +7,7 @@ namespace Modelos {
 
     public Aluno () : this(0) {
     }
+    
     public Aluno(int periodo) {
       if (periodo > 0){
         this.periodo = periodo;
