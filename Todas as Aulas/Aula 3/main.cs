@@ -19,6 +19,12 @@ class Aula3 {
     };
     print(aluno1);
     Aluno aluno2 = new Aluno();
-     print(aluno2);
+    print(aluno2);
+    Aluno aluno3 = new Aluno(2);
+    print(aluno3);
+    Aluno aluno4 = new Aluno("2021ENEL456", "Luis");
+    print(aluno4);
+    Aluno aluno5 = new Aluno("2021ENEL789", "LuisCaraDeBunda", 3);
+    print(aluno5);
   }
 }

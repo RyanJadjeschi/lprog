@@ -15,6 +15,34 @@ namespace Modelos {
       }
     }
 
+    public Aluno(string matricula, string nome)  :  this(){
+      this.matricula = matricula;
+      this.nome = nome;
+    }
+
+    public Aluno(string matricula, string nome, int periodo)  :  this(periodo){
+      this.matricula = matricula;
+      this.nome = nome;
+      
+    }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     public bool Matricular(Disciplina disciplina) {
       return this.periodo == disciplina.semestre;
