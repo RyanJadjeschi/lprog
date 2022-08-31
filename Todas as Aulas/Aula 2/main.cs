@@ -4,24 +4,24 @@ class Aula2{
 
 
   public struct Aluno {
-    public string matricula; 
-    public int periodo;
+    public string Matricula; 
+    public int Periodo;
   }
 
   public struct Disciplina {
-    public string nome;
+    public string Nome;
     public int semestre;
   }
 
   public static bool Matricular(Aluno aluno, Disciplina disciplina) {
 
-    return aluno.periodo == disciplina.semestre;
+    return aluno.Periodo == disciplina.semestre;
     
   }
 
   public static void Imprimir(Aluno aluno, Disciplina disciplina){
       if (Matricular(aluno, disciplina)){
-        Console.WriteLine(aluno.matricula);
+        Console.WriteLine(aluno.Matricula);
       }
     }
   
@@ -29,17 +29,17 @@ class Aula2{
   public static void Main (string[] args) {
 
     Aluno aluno1 = new Aluno {
-      matricula = "012022",
-      periodo = 1
+      Matricula = "012022",
+      Periodo = 1
     };
     
     Aluno aluno2 = new Aluno {
-      matricula = "022022",
-      periodo = 3
+      Matricula = "022022",
+      Periodo = 3
     };
 
     Disciplina disciplina = new Disciplina {
-      nome = "Linguagem de Programação",
+      Nome = "Linguagem de Programação",
       semestre = 3
     };
 
