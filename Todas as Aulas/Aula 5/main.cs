@@ -25,3 +25,4 @@ class Aula5 {
     professor1.Cpf = "851.152.090-20";
     Impressora.print(professor1);
 }
+}
