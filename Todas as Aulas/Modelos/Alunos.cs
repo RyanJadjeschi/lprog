@@ -1,6 +1,6 @@
 namespace Modelos {
 
-  class Aluno {
+  class Aluno : Pessoa {
     
     private int periodo;
     
@@ -16,9 +16,6 @@ namespace Modelos {
       }
     }
 
-    public string Nome {
-      get; set;
-    }
 
     public string Matricula{
       get; set;
