@@ -1,6 +1,6 @@
 using Modelos;
 
-class Aula5 {
+class Aula6 {
 
   public static void Main (string[] args) {
     Aluno aluno1 = new Aluno(0);

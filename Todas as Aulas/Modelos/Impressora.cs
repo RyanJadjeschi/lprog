@@ -5,53 +5,67 @@ namespace Modelos {
 
   class Impressora {
 
+    public static void print(Object obj) {
+      
+      Console.WriteLine("---------------------------");
+      if (obj is Pessoa) {
+        print((Pessoa) obj);
+      }
+      if (obj is Aluno) {
+        print((Aluno) obj);
+      }
+      if (obj is Professor) {
+        print((Professor) obj);
+      }
     
-  public static void print(Pessoa pessoa) {
+      if (obj is Disciplina) {
+        print((Disciplina) obj);
+      }
+      if (obj is Contato) {
+        print((Contato) obj);}
+      Console.WriteLine("---------------------------");
+      
+      
+    }
+
+    
+  private static void print(Pessoa pessoa) {
     Console.WriteLine(
-      "---------------------------\n" +
       "Nome: " + pessoa.Nome + "\n" +
-      "CPF: " + pessoa.Cpf + "\n" +
-      "---------------------------"
+      "CPF: " + pessoa.Cpf  
     );
     }
     
-    public static void print(Aluno aluno) {
+    private static void print(Aluno aluno) {
     Console.WriteLine(
-      "---------------------------\n" +
+      
       "Matricula: " + aluno.Matricula + "\n" +
-      "Nome: " + aluno.Nome + "\n" +
-      "CPF: " + aluno.Cpf + "\n" +
-      "Periodo: " + aluno.Periodo + "\n" +
-      "---------------------------"
+      "Periodo: " + aluno.Periodo + "\n" 
+      
     );
     }
 
-    public static void print(Professor professor) {
+    private static void print(Professor professor) {
     Console.WriteLine(
-      "---------------------------\n" +
-      "Nome: " + professor.Nome + "\n" +
-      "CPF: " + professor.Cpf + "\n" +
-      "Codigo: " + professor.Codigo + "\n" +
-      "---------------------------"
+      
+     
+      "Codigo: " + professor.Codigo + "\n" 
+      
     );
     }
 
-    public static void print(Familiar familiar) {
+    private static void print(Contato contato) {
     Console.WriteLine(
-      "---------------------------\n" +
-      "Nome: " + familiar.Nome + "\n" +
-      "CPF: " + familiar.Cpf + "\n" +
-      "Parentesco: " + familiar.Parentesco + "\n" +
-      "---------------------------"
+      contato.Informar()
     );
     }
 
-    public static void print(Disciplina disciplina) {
+    private static void print(Disciplina disciplina) {
     Console.WriteLine(
-      "---------------------------\n" +
+      
       "Nome: " + disciplina.Nome + "\n" +
-      "Semestre: " + disciplina.semestre + "\n" +
-      "---------------------------"
+      "Semestre: " + disciplina.semestre + "\n" 
+      
     );
     }
   }

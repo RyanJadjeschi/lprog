@@ -1,6 +1,6 @@
 namespace Modelos {
 
-  class Familiar : Pessoa {
+  class Familiar : Pessoa, Contato {
     
     public string Parentesco {
       get; set;
@@ -9,6 +9,11 @@ namespace Modelos {
     public override bool Validar() {
       return this.Parentesco != null && this.Parentesco.Length > 0;
     }
+
+    public string Informar(){
+      return "Parentesco: " + this.Parentesco + "\n";
+    }
+    
     
   }
   

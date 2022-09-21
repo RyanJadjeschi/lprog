@@ -11,7 +11,7 @@ namespace Modelos {
        }else if (semestre > 10) {
         this.semestre = 10; 
        } else{
-              this.semestre = semestre;
+              this.semestre = value;
        }
       }
     }
