@@ -1,6 +1,6 @@
 namespace Modelos {
 
-  class Pessoa {
+  abstract class Pessoa {
 
     private string cpf;
 
@@ -13,6 +13,9 @@ namespace Modelos {
         }
       }
     }
+
+
+    public abstract bool Validar();
 
     public bool Validar(string cpf) {
       

@@ -42,5 +42,10 @@ namespace Modelos {
     public bool Matricular(Disciplina disciplina) {
       return this.Periodo == disciplina.semestre;
     }
+
+    public override bool Validar() {
+      return this.Matricula != null && this.Matricula.Length > 0;
+    }
+    
   }
 } 

@@ -36,6 +36,16 @@ namespace Modelos {
     );
     }
 
+    public static void print(Familiar familiar) {
+    Console.WriteLine(
+      "---------------------------\n" +
+      "Nome: " + familiar.Nome + "\n" +
+      "CPF: " + familiar.Cpf + "\n" +
+      "Parentesco: " + familiar.Parentesco + "\n" +
+      "---------------------------"
+    );
+    }
+
     public static void print(Disciplina disciplina) {
     Console.WriteLine(
       "---------------------------\n" +
