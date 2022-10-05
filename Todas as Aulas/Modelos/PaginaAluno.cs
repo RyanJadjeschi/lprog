@@ -1,18 +1,20 @@
 namespace Modelos {
 
-  class TextoAluno : Texto {
+  class TextoAluno : TextoPessoa {
 
     public Aluno Aluno {
       get; set;
     }
 
-    public TextoAluno(Aluno aluno) {
+    public TextoAluno(Aluno aluno) : base((Pessoa) aluno) {
       this.Aluno = aluno;
     }
 
     public override  string Informar() {
-      return "Matricula: " + this.Aluno.Matricula + "\n" +
-      "Periodo: " + this.Aluno.Periodo + "\n";
+      return
+      base.Informar() + "\n" +  
+      "Matricula: " + this.Aluno.Matricula + "\n" +
+      "Periodo: " + this.Aluno.Periodo;
     }
 
     

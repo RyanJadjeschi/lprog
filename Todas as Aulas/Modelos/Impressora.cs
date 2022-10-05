@@ -15,14 +15,6 @@ namespace Modelos {
     }
 
     
-  public static void print(Pessoa pessoa) {
-    Console.WriteLine(
-      "Nome: " + pessoa.Nome + "\n" +
-      "CPF: " + pessoa.Cpf  
-    );
-    }
-    
-   
 
     public static void print(Professor professor) {
     Console.WriteLine(
