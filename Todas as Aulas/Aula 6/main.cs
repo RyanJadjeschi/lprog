@@ -29,7 +29,7 @@ class Aula6 {
     familiar1.Nome = "Luis Henrrique Bada";
     familiar1.Cpf = "851.152.090-20";
     familiar1.Parentesco = "Irmao de Sangue";
-    Impressora.print(familiar1);
+    //Impressora.print(familiar1);
 
     Pessoa pessoa3 = new Professor();
     pessoa3.Cpf = "588.401.710-37";
