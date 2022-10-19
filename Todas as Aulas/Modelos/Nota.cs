@@ -1,8 +1,9 @@
+using System;
 namespace Modelos {
 
   class Nota {
 
-    public Date Data {
+    public DateTime Data {
       get; set;
     }
 

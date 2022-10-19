@@ -1,30 +1,37 @@
-namespace Modelos {
+using System.Collections.Generic;
 
+namespace Modelos {
+  
   class Historico {
 
-    public int Faltas{
+    public float Faltas {
       get; set;
+      
     }
 
     public Turma Turma {
       get; set;
+      
     }
-
-    public Matricula Matricula {
+    
+    public Matricula Matricula  {
       get; set;
-    }
+      
+    } 
 
-    public List<Nota> Notas {
+    public List<Nota> Notas = new List<Nota>();
+      
+    
+
+    public Resultado Resultado{
       get; set;
+
+      
     }
 
-    public Resultado Resultado {
-      get; set;
+    public Historico(){
+      this.Resultado = new Resultado(this);
     }
 
-    public Historico(List<Nota> notas, Resultado resultado ) {
-      this.Notas = notas;
-      this.Resultado = resultado;
-    }
   }
 }
