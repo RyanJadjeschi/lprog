@@ -42,7 +42,7 @@ namespace Modelos {
     public Matricula Cursar (Curso curso) {
       Matricula matricula = new Matricula();
       matricula.Aluno = this;
-      matricula.Curso(curso);
+      matricula.Curso = curso;
       return matricula;
     }
 
