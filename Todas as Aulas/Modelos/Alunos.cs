@@ -38,9 +38,12 @@ namespace Modelos {
       this.Nome = nome;
       
     }
-      
-    public bool Matricular(Disciplina disciplina) {
-      return this.Periodo == disciplina.semestre;
+
+    public Matricula Cursar (Curso curso) {
+      Matricula matricula = new Matricula();
+      matricula.Aluno = this;
+      matricula.Curso(curso);
+      return matricula;
     }
 
     public override bool Validar() {
