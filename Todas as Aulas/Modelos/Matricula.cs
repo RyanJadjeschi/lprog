@@ -1,7 +1,12 @@
+using System.Collections.Generic;
+
 namespace Modelos {
 
   class Matricula {
 
+    public List<Historico> Historicos = 
+      new List<Historico>();
+    
     public int Ano {
       get; set;
     }
